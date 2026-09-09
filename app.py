@@ -331,79 +331,32 @@ if st.button(
 
 
     # Four columns
-    f1, f2, f3, f4 = st.columns(4)
+   # Four columns
+f1, f2, f3, f4 = st.columns(4)
 
+with f1:
+    st.metric(
+        "Current Magnitude",
+        f"{I_mag:.4f}"
+    )
 
-    with f1:
+with f2:
+    st.metric(
+        "Voltage Magnitude",
+        f"{V_mag:.4f}"
+    )
 
-        st.markdown(
-            f"""
-            <div class="feature-card">
-                <div class="feature-name">
-                    Current Magnitude
-                </div>
+with f3:
+    st.metric(
+        "Current Imbalance",
+        f"{I_imbalance:.4f}"
+    )
 
-                <div class="feature-value">
-                    {I_mag:.4f}
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-
-    with f2:
-
-        st.markdown(
-            f"""
-            <div class="feature-card">
-                <div class="feature-name">
-                    Voltage Magnitude
-                </div>
-
-                <div class="feature-value">
-                    {V_mag:.4f}
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-
-    with f3:
-
-        st.markdown(
-            f"""
-            <div class="feature-card">
-                <div class="feature-name">
-                    Current Imbalance
-                </div>
-
-                <div class="feature-value">
-                    {I_imbalance:.4f}
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-
-    with f4:
-
-        st.markdown(
-            f"""
-            <div class="feature-card">
-                <div class="feature-name">
-                    Voltage Imbalance
-                </div>
-
-                <div class="feature-value">
-                    {V_imbalance:.4f}
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+with f4:
+    st.metric(
+        "Voltage Imbalance",
+        f"{V_imbalance:.4f}"
+    )
 
 
 # ============================================================
