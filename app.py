@@ -306,26 +306,11 @@ if st.button(
         st.error(f"🔴 {prediction} FAULT DETECTED")
 
 
-    st.markdown(
-        f"""
-        <div class="prediction-card">
+    st.markdown("### Classification")
 
-            <div class="prediction-label">
-                CLASSIFICATION
-            </div>
+    st.subheader(prediction)
 
-            <div class="prediction-value">
-                {prediction}
-            </div>
-
-            <div>
-                {fault_descriptions[prediction]}
-            </div>
-
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    st.write(fault_descriptions[prediction])
 
 
     # ========================================================
