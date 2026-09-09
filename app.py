@@ -331,32 +331,32 @@ if st.button(
 
 
     # Four columns
-   # Four columns
-f1, f2, f3, f4 = st.columns(4)
+   
+    f1, f2, f3, f4 = st.columns(4)
 
-with f1:
-    st.metric(
-        "Current Magnitude",
-        f"{I_mag:.4f}"
-    )
+    with f1:
+        st.metric(
+            "Current Magnitude",
+            f"{input_features['I_mag'].iloc[0]:.4f}"
+        )
 
-with f2:
-    st.metric(
-        "Voltage Magnitude",
-        f"{V_mag:.4f}"
-    )
+    with f2:
+        st.metric(
+            "Voltage Magnitude",
+            f"{input_features['V_mag'].iloc[0]:.4f}"
+        )
 
-with f3:
-    st.metric(
-        "Current Imbalance",
-        f"{I_imbalance:.4f}"
-    )
+    with f3:
+        st.metric(
+            "Current Imbalance",
+            f"{input_features['I_imbalance'].iloc[0]:.4f}"
+        )
 
-with f4:
-    st.metric(
-        "Voltage Imbalance",
-        f"{V_imbalance:.4f}"
-    )
+    with f4:
+        st.metric(
+            "Voltage Imbalance",
+            f"{input_features['V_imbalance'].iloc[0]:.4f}"
+        )
 
 
 # ============================================================
