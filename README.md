@@ -73,7 +73,7 @@ The final Decision Tree model achieved approximately:
 
 - **Test Accuracy:** 95.8%
 - **Best Cross-Validation Accuracy:** 95.28%
-![Streamlit App](images/Prediction_result.png)
+
 The model performed particularly well on most fault classes, while **LLL and LLLG** were relatively more difficult to distinguish.
 
 ## 🔧 Technologies Used
