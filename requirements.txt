@@ -4,10 +4,4 @@ numpy
 scikit-learn
 joblib
 
-| Package        | Used for                    |
-| -------------- | --------------------------- |
-| `streamlit`    | Web application             |
-| `pandas`       | DataFrames / input handling |
-| `numpy`        | Feature calculations        |
-| `scikit-learn` | Decision Tree model         |
-| `joblib`       | Loading the saved model     |
+
