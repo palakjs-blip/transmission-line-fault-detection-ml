@@ -7,7 +7,7 @@ A machine learning project that detects and classifies transmission line operati
 Transmission line faults can cause serious problems in electrical power systems. Early detection and classification of faults can help improve the reliability and protection of power systems.
 
 This project uses machine learning to classify six different transmission line conditions from three-phase electrical measurements.
-
+![Streamlit App](images/streamlit_app.png)
 ### Fault Classes
 
 - Normal — Normal Operating Condition
@@ -58,7 +58,13 @@ The following classification models were evaluated:
 - Random Forest Classifier
 
 Feature engineering significantly improved the performance of the Decision Tree model.
+### Confusion Matrix
 
+![Confusion Matrix](images/confusion_matrix.png)
+
+### Feature Importance
+
+![Feature Importance](images/feature_importance.png)
 The final model uses a tuned **Decision Tree Classifier**.
 
 ## 📈 Results
@@ -67,7 +73,7 @@ The final Decision Tree model achieved approximately:
 
 - **Test Accuracy:** 95.8%
 - **Best Cross-Validation Accuracy:** 95.28%
-
+![Streamlit App](images/Prediction_result.png)
 The model performed particularly well on most fault classes, while **LLL and LLLG** were relatively more difficult to distinguish.
 
 ## 🔧 Technologies Used
