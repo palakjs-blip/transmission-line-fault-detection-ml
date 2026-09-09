@@ -64,7 +64,7 @@ Feature engineering significantly improved the performance of the Decision Tree 
 
 ### Feature Importance
 
-![Feature Importance](images/feature_importance.png)
+![Feature Importance](images/Feature_importance.png)
 The final model uses a tuned **Decision Tree Classifier**.
 
 ## 📈 Results
